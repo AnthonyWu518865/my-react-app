@@ -15,6 +15,8 @@ export default function Board() {
     const nextSquares = squares.slice();
     if (xIsNext) {
       nextSquares[i] = "X";
+    }else {
+      nextSquares[i] = "O";
     }
     setSquares(nextSquares);
   }
