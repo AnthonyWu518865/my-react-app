@@ -18,7 +18,7 @@ export default function Board() {
     const nextSquares = squares.slice();
     if (xIsNext) {
       nextSquares[i] = "X";
-    }else {
+    } else {
       nextSquares[i] = "O";
     }
     setSquares(nextSquares);
@@ -43,4 +43,19 @@ export default function Board() {
       </div>
     </>
   );
+}
+
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  return null;
+
 }
